@@ -1,0 +1,61 @@
+.Write a C program to find the eligibility of admission for a professional course based on the following criteria
+Eligibility Criteria : Marks in Maths >=65 and Marks in Phy >=55 and Marks in Chem>=50 and
+Total in all three subject >=190 or Total in Maths and Physics >=140*/
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+int maths,phy,che,total,tpm;
+char sname[20];
+
+printf("Eligibility Criteria:);
+printf("Marks in Maths >=65); 
+printf("Marks in Phy >=55);
+printf("Marks in Chem>=50);
+printf("Total in all three subject >=190);
+printf("Total in Maths and Physics >=140);
+printf("_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _");
+
+
+printf("enter the marks of maths");
+scanf("%d",&maths);
+
+printf("enter the marks of phy");
+scanf("%d",&phy);
+
+printf("enter the marks of che");
+scanf("%d",&che);
+
+total=maths+phy+che;
+
+printf("enter the marks of total of all subjescts");
+scanf("%d",&total);
+
+tmp=maths+phy;
+printf("the sum of the marks of maths and phy=%d",tmp);
+
+if(maths>=65)
+printf("ur Eligible WRT maths");
+else
+printf("ur not Eligible WRT maths");
+ 
+if(phy>=55)
+printf("ur Eligible WRT phy");
+else
+printf("ur not Eligible WRT phy");  
+
+if(Che>=50)
+printf("ur Eligible WRT che");
+else
+printf("ur not Eligible WRT che");  
+
+if(Total in all three subject >=190 || Total in Maths and Physics >=140)
+printf("eligible WRT some of ");
+else
+printf("not eligible");
+
+getch();
+
+}
